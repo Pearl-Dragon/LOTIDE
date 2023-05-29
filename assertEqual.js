@@ -11,3 +11,4 @@ assertEqual("Hello", "Hello");
 assertEqual("hello", "world");
 assertEqual(42, 42);
 //assertEqual(42, 99);
+// Using template litterals to generate the assertion message
