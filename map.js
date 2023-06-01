@@ -28,7 +28,7 @@ const map = function(array, callback) {
 
 const results1 = map(words, word => word[0]);  //call the map function with words and the callback function word => word[0], it will correctly map each word to its first character
 console.log(results1);  // resulting array will be assigned to results1, and finally, it will be printed to the console using console.log(results1).*/
-cd
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
