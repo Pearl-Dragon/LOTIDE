@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@pearl-d/lotide",
   "version": "1.0.0",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Pearl-Dragon/LOTIDE.git"
   },
-  "author": "",
+  "author": "pearl-d",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Pearl-Dragon/LOTIDE/issues"
@@ -107,5 +107,5 @@
     "yocto-queue": "^0.1.0",
     "yargs-unparser": "^2.0.0"
   },
-  "description": ""
+  "description": "Small library of JS codes"
 }
