@@ -12,7 +12,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @pearl-d/lotide`
+`npm install @pearl-d/lotide` / Please install this on MAC OS because the fsevents package tuns on os:darwin OS and not on Windows
 
 **Require it:**
 
