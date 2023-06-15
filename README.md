@@ -19,8 +19,7 @@ This project was created and published by me as part of my learnings at Lighthou
 `const _ = require('@pearl-d/lotide');`
 
 **Call it:**
-
-`const results = _.tail([1, 2, 3]) // => [2, 3]`
+`console.log(_.tail([10, 20, 30])); // => [20, 30]`
 
 ## Documentation
 
@@ -34,8 +33,9 @@ The following functions are currently implemented:
 
 *assertArraysEqual(actual, expected): This function uses eqArrays to compare actual and expected arrays. If they are equal, it prints an assertion passed message. If they are not equal, it prints an assertion failed message.
 
-*assertEqual(actual, expected): This function compares the actual and expected values and checks if they are equal. If the values are equal, it prints an assertion passed message. If the values are not equal, it prints an assertion failed message.
-The assertEqual function is commonly used for comparing primitive values like strings, numbers, booleans, etc., and verifying their equality. It helps in providing clear feedback about whether the assertion passed or failed, making it easier to identify and debug any discrepancies in the values being compared.
+*assertObject function is typically a custom assertion function used to compare and assert the equality of two objects. It compares the properties and values of the objects to determine if they are equal or not.
+
+*assertEqual(actual, expected): This function compares the actual and expected values and checks if they are equal. If the values are equal, it prints an assertion passed message. If the values are not equal, it prints an assertion failed message.The assertEqual function is commonly used for comparing primitive values like strings, numbers, booleans, etc., and verifying their equality. It helps in providing clear feedback about whether the assertion passed or failed, making it easier to identify and debug any discrepancies in the values being compared.
 
 *eqObjects(object1, object2): This function compares two objects (object1 and object2) and checks if they are equal. It compares the keys and values of the objects to determine their equality.
 

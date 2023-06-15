@@ -6,5 +6,4 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// Using template litterals to generate the assertion message
 module.exports = assertEqual;

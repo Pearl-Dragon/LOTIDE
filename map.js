@@ -28,29 +28,31 @@ const map = function(array, callback) {
 
 const results1 = map(words, word => word[0]);  //call the map function with words and the callback function word => word[0], it will correctly map each word to its first character
 console.log(results1);  // resulting array will be assigned to results1, and finally, it will be printed to the console using console.log(results1).*/
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
 
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
 
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
 
-  return true;
-};
+//   return true;
+// };
 
-const assertArraysEqual = function(actual, expected) {
-  const isEqual = eqArrays(actual, expected);
-  if (isEqual) {
-    console.log(`👍 Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`🆘 Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
+// const assertArraysEqual = function(actual, expected) {
+//   const isEqual = eqArrays(actual, expected);
+//   if (isEqual) {
+//     console.log(`👍 Assertion Passed: [${actual}] === [${expected}]`);
+//   } else {
+//     console.log(`🆘 Assertion Failed: [${actual}] !== [${expected}]`);
+//   }
+// };
 
 const map = function(array, callback) {
   const results = [];
@@ -77,3 +79,5 @@ assertArraysEqual(results2, ["GROUND", "CONTROL", "TO", "MAJOR", "TOM"]);
 // Test case 3: Map each word to its last character
 const results3 = map(words, word => word[word.length - 1]);
 assertArraysEqual(results3, ["d", "l", "o", "r", "m"]);
+
+module.exports = map;
