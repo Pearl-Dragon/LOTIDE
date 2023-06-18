@@ -1,44 +1,26 @@
-const min = function (numbers) {
-  let smallest = numbers[0];
+//Fn takes an array of numbers and finds the smallest number among them
+const min = function(numbers) {
+  let smallest = numbers[0];     //It initializes a variable smallest with the value of the first element (numbers[0]) of the numbers array.
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] < smallest) {
-      smallest = numbers[i];
+    if (numbers[i] < smallest) {    // The loop starts at index 0 and continues until i is less than the length of the numbers array.
+      smallest = numbers[i];   //If number[i] is smaller than the current smallest value, it updates the value of smallest to numbers[i].
     }
   }
-  return smallest;
-  // Write code here that returns the smallest value in numbers
+  return smallest;  //represents the smallest number in the numbers array.
+
 };
-/*
- * This is test runner code that's simply calling our min function defined
- above to verify it's returning the proper minimum. Do not modify it!
- */
-
-const flightPrices = [1260, 490, 599, 1400, 820];
-console.log(
-  `The cheapest flight amongst $1260, $490, $599, $1400 and $820 costs \$${min(
-    flightPrices
-  )}`
-);
-
-const golfScores = [-1, 3, 0, -4, 1, 4, -2];
-console.log(
-  `The winning golf score amongst -1, 3, 0, -4, 1, 4 and -2 is ${min(
-    golfScores
-  )}`
-);
-
-const pageNumbers = [232];
-console.log(
-  `The shortest book out of a list of single book with 232 pages has ${min(
-    pageNumbers
-  )} pages`
-);
-
-const temperatures = [45, 10, -20, 0, 3, -20];
-console.log(
-  `The coldest temperature amongst 45C, 10C, -20C, 0C, 3C and -20C is ${min(
-    temperatures
-  )}C`
-);
 
 module.exports = min;
+
+
+
+
+/* Notes below meant for personal reference:
+
+It initializes a variable smallest with the value of the first element (numbers[0]) of the numbers array.
+It then iterates over the elements of the numbers array using a for loop. The loop starts at index 0 and continues until i is less than the length of the numbers array.
+For each element at index i, it compares the value of numbers[i] with the current value of smallest.
+If numbers[i] is smaller than the current smallest value, it updates the value of smallest to numbers[i].
+The loop continues until all elements in the numbers array have been compared.
+Finally, the function returns the value of smallest, which represents the smallest number in the numbers array.
+In summary, the min function takes an array of numbers and finds the smallest number among them. It iterates over the array, comparing each element with the current smallest value, and updates the smallest value accordingly. The function then returns the smallest number found.*/

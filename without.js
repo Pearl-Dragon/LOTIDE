@@ -1,6 +1,4 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
-
+// This Fn function filters out elements from the source array that are present in the itemsToRemove array and returns a new array with the filtered items.
 const without = function(source, itemsToRemove) {
   const result = [];
   for (let item of source) {
@@ -8,20 +6,20 @@ const without = function(source, itemsToRemove) {
       result.push(item);
     }
   }
-  return result;
+  return result; // the function returns the result array containing the filtered items.
 };
-
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-
-console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
-
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [3, 2, 1]);
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
 
 
 module.exports = without;
+
+
+
+
+/* Notes below for personal reference:
+
+It initializes an empty array called result to store the filtered items.
+It iterates over each element (item) in the source array using a for...of loop.
+For each item, it checks if the itemsToRemove array does not include the current item using the includes method. The includes method returns true if the array contains the specified element.
+If the item is not present in the itemsToRemove array, it means it should be included in the result, so it is pushed to the result array using the push method.
+After iterating over all the elements in the source array, the function returns the result array containing the filtered items.
+In summary, the without function filters out elements from the source array that are present in the itemsToRemove array and returns a new array with the filtered items.*/
